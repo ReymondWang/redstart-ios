@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		906D1BE9A79125AD3F8608AC /* Pods_redstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416FF3241D6FB028FAA9D7E8 /* Pods_redstar.framework */; };
+		BA5B99091CF82E670005DDC5 /* LeftDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B99081CF82E670005DDC5 /* LeftDrawerViewController.swift */; };
+		BA6660A31CF6D1F300EF60AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6660A21CF6D1F300EF60AD /* AppDelegate.swift */; };
+		BA6660A51CF6D1F300EF60AD /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6660A41CF6D1F300EF60AD /* HomePageViewController.swift */; };
+		BA6660A81CF6D1F300EF60AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6660A61CF6D1F300EF60AD /* Main.storyboard */; };
+		BA6660AA1CF6D1F300EF60AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6660A91CF6D1F300EF60AD /* Assets.xcassets */; };
+		BA6660AD1CF6D1F300EF60AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6660AB1CF6D1F300EF60AD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E0F0519C78B68949DF02954 /* Pods-redstar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redstar.release.xcconfig"; path = "Pods/Target Support Files/Pods-redstar/Pods-redstar.release.xcconfig"; sourceTree = "<group>"; };
+		416FF3241D6FB028FAA9D7E8 /* Pods_redstar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_redstar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		528349CAAB49511F0212485B /* Pods-redstar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redstar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redstar/Pods-redstar.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5B99081CF82E670005DDC5 /* LeftDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftDrawerViewController.swift; sourceTree = "<group>"; };
+		BA5B990A1CF830500005DDC5 /* redstar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redstar-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA66609F1CF6D1F200EF60AD /* redstar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redstar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6660A21CF6D1F300EF60AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA6660A41CF6D1F300EF60AD /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		BA6660A71CF6D1F300EF60AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA6660A91CF6D1F300EF60AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA6660AC1CF6D1F300EF60AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA6660AE1CF6D1F300EF60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA66609C1CF6D1F200EF60AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906D1BE9A79125AD3F8608AC /* Pods_redstar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ACBDD655FF8C8B741C68363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				416FF3241D6FB028FAA9D7E8 /* Pods_redstar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA5B99071CF82E090005DDC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA6660A41CF6D1F300EF60AD /* HomePageViewController.swift */,
+				BA5B99081CF82E670005DDC5 /* LeftDrawerViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BA6660961CF6D1F200EF60AD = {
+			isa = PBXGroup;
+			children = (
+				BA6660A11CF6D1F300EF60AD /* redstar */,
+				BA6660A01CF6D1F200EF60AD /* Products */,
+				F0889D5036C70568575E4742 /* Pods */,
+				9ACBDD655FF8C8B741C68363 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA6660A01CF6D1F200EF60AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA66609F1CF6D1F200EF60AD /* redstar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6660A11CF6D1F300EF60AD /* redstar */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B99071CF82E090005DDC5 /* Controllers */,
+				BA6660A21CF6D1F300EF60AD /* AppDelegate.swift */,
+				BA6660A61CF6D1F300EF60AD /* Main.storyboard */,
+				BA6660A91CF6D1F300EF60AD /* Assets.xcassets */,
+				BA6660AB1CF6D1F300EF60AD /* LaunchScreen.storyboard */,
+				BA6660AE1CF6D1F300EF60AD /* Info.plist */,
+				BA5B990A1CF830500005DDC5 /* redstar-Bridging-Header.h */,
+			);
+			path = redstar;
+			sourceTree = "<group>";
+		};
+		F0889D5036C70568575E4742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				528349CAAB49511F0212485B /* Pods-redstar.debug.xcconfig */,
+				3E0F0519C78B68949DF02954 /* Pods-redstar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA66609E1CF6D1F200EF60AD /* redstar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6660B11CF6D1F300EF60AD /* Build configuration list for PBXNativeTarget "redstar" */;
+			buildPhases = (
+				30801E8100081B2C82A6C0A2 /* 📦 Check Pods Manifest.lock */,
+				BA66609B1CF6D1F200EF60AD /* Sources */,
+				BA66609C1CF6D1F200EF60AD /* Frameworks */,
+				BA66609D1CF6D1F200EF60AD /* Resources */,
+				BD070AA132CE16EE9E55FC27 /* 📦 Embed Pods Frameworks */,
+				610FFD4D38BF7B95E639BD55 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = redstar;
+			productName = redstar;
+			productReference = BA66609F1CF6D1F200EF60AD /* redstar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6660971CF6D1F200EF60AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lelern;
+				TargetAttributes = {
+					BA66609E1CF6D1F200EF60AD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BA66609A1CF6D1F200EF60AD /* Build configuration list for PBXProject "redstar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6660961CF6D1F200EF60AD;
+			productRefGroup = BA6660A01CF6D1F200EF60AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA66609E1CF6D1F200EF60AD /* redstar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA66609D1CF6D1F200EF60AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6660AD1CF6D1F300EF60AD /* LaunchScreen.storyboard in Resources */,
+				BA6660AA1CF6D1F300EF60AD /* Assets.xcassets in Resources */,
+				BA6660A81CF6D1F300EF60AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30801E8100081B2C82A6C0A2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		610FFD4D38BF7B95E639BD55 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-redstar/Pods-redstar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD070AA132CE16EE9E55FC27 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-redstar/Pods-redstar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA66609B1CF6D1F200EF60AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA5B99091CF82E670005DDC5 /* LeftDrawerViewController.swift in Sources */,
+				BA6660A51CF6D1F300EF60AD /* HomePageViewController.swift in Sources */,
+				BA6660A31CF6D1F300EF60AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA6660A61CF6D1F300EF60AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6660A71CF6D1F300EF60AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA6660AB1CF6D1F300EF60AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6660AC1CF6D1F300EF60AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA6660AF1CF6D1F300EF60AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA6660B01CF6D1F300EF60AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA6660B21CF6D1F300EF60AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528349CAAB49511F0212485B /* Pods-redstar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = redstar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplelight.redstar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "redstar/redstar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA6660B31CF6D1F300EF60AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E0F0519C78B68949DF02954 /* Pods-redstar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = redstar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplelight.redstar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "redstar/redstar-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA66609A1CF6D1F200EF60AD /* Build configuration list for PBXProject "redstar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6660AF1CF6D1F300EF60AD /* Debug */,
+				BA6660B01CF6D1F300EF60AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6660B11CF6D1F300EF60AD /* Build configuration list for PBXNativeTarget "redstar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6660B21CF6D1F300EF60AD /* Debug */,
+				BA6660B31CF6D1F300EF60AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA6660971CF6D1F200EF60AD /* Project object */;
+}

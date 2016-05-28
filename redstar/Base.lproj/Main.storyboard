@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yv5-j1-ce4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Left Drawer View Controller-->
+        <scene sceneID="b71-uw-tOf">
+            <objects>
+                <viewController storyboardIdentifier="LeftDrawerViewController" id="PZD-bz-9yp" customClass="LeftDrawerViewController" customModule="redstar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VFw-YS-UbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="duK-gk-0xD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WX5-xB-Bjw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_user_info" translatesAutoresizingMaskIntoConstraints="NO" id="Lzg-6n-nH5">
+                                <rect key="frame" x="0.0" y="20" width="600" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="fx6-Of-eMW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head_image" translatesAutoresizingMaskIntoConstraints="NO" id="otO-V8-CPe">
+                                <rect key="frame" x="36" y="53" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="G4T-Eu-v3v"/>
+                                    <constraint firstAttribute="height" constant="60" id="x7K-YC-OMs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="管理员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lj-al-fWy">
+                                <rect key="frame" x="36" y="121" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zisetianguang@sina.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-GS-Yda">
+                                <rect key="frame" x="36" y="150" width="160.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j4l-Xh-J8J">
+                                <rect key="frame" x="20" y="188" width="560" height="412"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="hRk-TN-mbx">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hRk-TN-mbx" id="0ax-ac-ORc">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PZD-bz-9yp" id="vUz-bC-D9c"/>
+                                    <outlet property="delegate" destination="PZD-bz-9yp" id="CFw-VL-LgR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cUP-GS-Yda" firstAttribute="leading" secondItem="WX5-xB-Bjw" secondAttribute="leadingMargin" constant="16" id="2WT-Ex-Ui2"/>
+                            <constraint firstItem="Lzg-6n-nH5" firstAttribute="top" secondItem="VFw-YS-UbO" secondAttribute="bottom" id="9iC-sg-xhd"/>
+                            <constraint firstItem="otO-V8-CPe" firstAttribute="leading" secondItem="8lj-al-fWy" secondAttribute="leading" id="ACI-wr-4GJ"/>
+                            <constraint firstItem="j4l-Xh-J8J" firstAttribute="leading" secondItem="WX5-xB-Bjw" secondAttribute="leadingMargin" id="LRV-k6-lUV"/>
+                            <constraint firstItem="cUP-GS-Yda" firstAttribute="top" secondItem="8lj-al-fWy" secondAttribute="bottom" constant="8" id="OKg-rG-Xdw"/>
+                            <constraint firstItem="cUP-GS-Yda" firstAttribute="top" secondItem="Lzg-6n-nH5" secondAttribute="bottom" constant="-30" id="QgK-bq-SVR"/>
+                            <constraint firstItem="8lj-al-fWy" firstAttribute="leading" secondItem="cUP-GS-Yda" secondAttribute="leading" id="R5G-Gd-Ovy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j4l-Xh-J8J" secondAttribute="trailing" id="fNA-nr-is0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lzg-6n-nH5" secondAttribute="trailing" constant="-20" id="h14-Vv-TeI"/>
+                            <constraint firstItem="8lj-al-fWy" firstAttribute="top" secondItem="otO-V8-CPe" secondAttribute="bottom" constant="8" id="kpd-VJ-BYm"/>
+                            <constraint firstItem="Lzg-6n-nH5" firstAttribute="leading" secondItem="WX5-xB-Bjw" secondAttribute="leadingMargin" constant="-20" id="qx3-5R-r6H"/>
+                            <constraint firstItem="duK-gk-0xD" firstAttribute="top" secondItem="j4l-Xh-J8J" secondAttribute="bottom" id="ryc-J7-2yV"/>
+                            <constraint firstItem="j4l-Xh-J8J" firstAttribute="top" secondItem="Lzg-6n-nH5" secondAttribute="bottom" constant="8" symbolic="YES" id="zwf-AX-Stb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mTableView" destination="j4l-Xh-J8J" id="k5C-6d-hQV"/>
+                        <outlet property="mUserEmail" destination="cUP-GS-Yda" id="Isx-Dv-hpN"/>
+                        <outlet property="mUserHeadImage" destination="otO-V8-CPe" id="Ulj-Bs-eyC"/>
+                        <outlet property="mUserName" destination="8lj-al-fWy" id="27P-GK-oRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zb5-hX-AjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-686"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JVd-UF-0BX">
+            <objects>
+                <navigationController storyboardIdentifier="HomePageViewController" id="Yv5-j1-ce4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VaL-MP-fr7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23529411764705882" green="0.55294117647058827" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ftp-at-TOB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZnK-hG-8Dy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="19"/>
+        </scene>
+        <!--项目管理-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageController" customModule="redstar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="项目管理" id="Pnd-AG-O6T">
+                        <barButtonItem key="leftBarButtonItem" image="ic_menu_white" id="cdB-iV-awd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="menuClick:" destination="BYZ-38-t0r" id="uHX-4F-jbD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_user_info" width="267" height="150"/>
+        <image name="default_head_image" width="45" height="45"/>
+        <image name="ic_menu_white" width="24" height="24"/>
+    </resources>
+    <color key="tintColor" red="0.23529411759999999" green="0.55294117649999996" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+</document>
