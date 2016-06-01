@@ -10,4 +10,6 @@ target 'redstar' do
   pod 'AlamofireImage', '~> 2.0'
   pod 'AlamofireNetworkActivityIndicator', '~> 1.0'
   pod 'MMDrawerController', '~> 0.5.7'
+  pod "ESPullToRefresh"
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end
