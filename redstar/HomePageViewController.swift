@@ -32,10 +32,15 @@ class HomePageController: UIViewController {
     
     @IBOutlet weak var menuSectionHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var pageControlView: UIPageControl!
+    
     // MARK: - Events
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let test = WebAPI.getWebApi(WebAPI.APP_FUNCTION)
+        
         service.loadData()
         
         service.sizeToFit(MENU_COLUMNS)
@@ -72,12 +77,29 @@ class HomePageController: UIViewController {
         let menuCell = menuView.dequeueReusableCellWithReuseIdentifier("homePageMenuCell", forIndexPath: indexPath) as! HomePageMenuViewCell
         
         let menuItem = service.funcMenus[indexPath.row]
-        if (menuItem.titleImgPath != ""){
-            menuCell.icon.rs_setImageByUrl(menuItem.titleImgPath, placeHolder: "cc_bg_default_topic_grid")
-        }
-        menuCell.title.text = menuItem.title
+        menuCell.title = menuItem.title
+        menuCell.icon = menuItem.titleImgPath
+        menuCell.notification = String(999)
+        
+        let selectedBgView = UIView(frame: menuCell.frame)
+        selectedBgView.backgroundColor = Color.ColorBackground
+        menuCell.selectedBackgroundView = selectedBgView
         
         return menuCell
+    }
+    
+    func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool{
+        return true
+    }
+    
+//    func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
+//        let menuCell = menuView.cellForItemAtIndexPath(indexPath)
+//        menuCell?.backgroundColor = Color.ColorLightGray
+//    }
+    
+    func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
+        let menuCell = menuView.cellForItemAtIndexPath(indexPath)
+        menuCell?.backgroundColor = Color.ColorWhite
     }
     
     // MARK: - Functions
@@ -95,6 +117,19 @@ class HomePageController: UIViewController {
         }
         
         topAdvView.contentSize = CGSize(width: totalWidth, height: topAdvView.frame.height - topAdvView.frame.minY)
+        
+        pageControlView.numberOfPages = service.topAdvs.count
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView){
+        let point = topAdvView.contentOffset
+        let scrollWidth = topAdvView.frame.size.width
+        let curPage = Int((point.x + scrollWidth / 2) / scrollWidth)
+        pageControlView.currentPage = curPage
+        
+        if point.x == scrollWidth * CGFloat(service.topAdvs.count){
+            topAdvView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
+        }
     }
     
     // MARK: - Actions

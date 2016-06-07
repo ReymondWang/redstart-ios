@@ -10,10 +10,13 @@
 		906D1BE9A79125AD3F8608AC /* Pods_redstar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416FF3241D6FB028FAA9D7E8 /* Pods_redstar.framework */; };
 		BA04BC8C1CFEC95A00E618EC /* HomePageMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04BC8B1CFEC95A00E618EC /* HomePageMenuViewCell.swift */; };
 		BA04BC931CFF1FCC00E618EC /* HomePageMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04BC921CFF1FCC00E618EC /* HomePageMenuLayout.swift */; };
+		BA14D80F1D07021100C8FB28 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14D80E1D07021100C8FB28 /* WebAPI.swift */; };
+		BA14D8121D07062900C8FB28 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA14D8111D07062900C8FB28 /* Configuration.plist */; };
+		BA14D8141D07090C00C8FB28 /* PropertyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14D8131D07090C00C8FB28 /* PropertyHelper.swift */; };
+		BA14D8181D0718C400C8FB28 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14D8171D0718C400C8FB28 /* Configuration.swift */; };
 		BA45B7861CFE77570034C2C7 /* AppFuncInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45B7851CFE77570034C2C7 /* AppFuncInfo.swift */; };
 		BA45B7891CFE78470034C2C7 /* HomePageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45B7881CFE78470034C2C7 /* HomePageService.swift */; };
 		BA45B78B1CFE78630034C2C7 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45B78A1CFE78630034C2C7 /* BaseService.swift */; };
-		BA45B78E1CFE80420034C2C7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45B78D1CFE80420034C2C7 /* Configuration.swift */; };
 		BA45B7911CFE81020034C2C7 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45B7901CFE81020034C2C7 /* ImageUtil.swift */; };
 		BA5B99091CF82E670005DDC5 /* LeftDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B99081CF82E670005DDC5 /* LeftDrawerViewController.swift */; };
 		BA6660A31CF6D1F300EF60AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6660A21CF6D1F300EF60AD /* AppDelegate.swift */; };
@@ -21,6 +24,7 @@
 		BA6660A81CF6D1F300EF60AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6660A61CF6D1F300EF60AD /* Main.storyboard */; };
 		BA6660AA1CF6D1F300EF60AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6660A91CF6D1F300EF60AD /* Assets.xcassets */; };
 		BA6660AD1CF6D1F300EF60AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6660AB1CF6D1F300EF60AD /* LaunchScreen.storyboard */; };
+		BAEFEFC41D06767300AD4EE9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEFC31D06767300AD4EE9 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +33,13 @@
 		528349CAAB49511F0212485B /* Pods-redstar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redstar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redstar/Pods-redstar.debug.xcconfig"; sourceTree = "<group>"; };
 		BA04BC8B1CFEC95A00E618EC /* HomePageMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageMenuViewCell.swift; sourceTree = "<group>"; };
 		BA04BC921CFF1FCC00E618EC /* HomePageMenuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageMenuLayout.swift; sourceTree = "<group>"; };
+		BA14D80E1D07021100C8FB28 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		BA14D8111D07062900C8FB28 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		BA14D8131D07090C00C8FB28 /* PropertyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyHelper.swift; sourceTree = "<group>"; };
+		BA14D8171D0718C400C8FB28 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BA45B7851CFE77570034C2C7 /* AppFuncInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFuncInfo.swift; sourceTree = "<group>"; };
 		BA45B7881CFE78470034C2C7 /* HomePageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageService.swift; sourceTree = "<group>"; };
 		BA45B78A1CFE78630034C2C7 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		BA45B78D1CFE80420034C2C7 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BA45B7901CFE81020034C2C7 /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 		BA5B99081CF82E670005DDC5 /* LeftDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftDrawerViewController.swift; sourceTree = "<group>"; };
 		BA5B990A1CF830500005DDC5 /* redstar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redstar-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -43,6 +50,7 @@
 		BA6660A91CF6D1F300EF60AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6660AC1CF6D1F300EF60AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6660AE1CF6D1F300EF60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEFEFC31D06767300AD4EE9 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,14 @@
 			name = Layouts;
 			sourceTree = "<group>";
 		};
+		BA14D8101D07060300C8FB28 /* Propertites */ = {
+			isa = PBXGroup;
+			children = (
+				BA14D8111D07062900C8FB28 /* Configuration.plist */,
+			);
+			name = Propertites;
+			sourceTree = "<group>";
+		};
 		BA45B7831CFE77150034C2C7 /* Web */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +125,9 @@
 		BA45B78C1CFE80220034C2C7 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				BA45B78D1CFE80420034C2C7 /* Configuration.swift */,
+				BA14D8171D0718C400C8FB28 /* Configuration.swift */,
+				BAEFEFC31D06767300AD4EE9 /* Color.swift */,
+				BA14D80E1D07021100C8FB28 /* WebAPI.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -118,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				BA45B7901CFE81020034C2C7 /* ImageUtil.swift */,
+				BA14D8131D07090C00C8FB28 /* PropertyHelper.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -152,6 +171,7 @@
 		BA6660A11CF6D1F300EF60AD /* redstar */ = {
 			isa = PBXGroup;
 			children = (
+				BA14D8101D07060300C8FB28 /* Propertites */,
 				BA04BC911CFF1FA200E618EC /* Layouts */,
 				BA04BC871CFEC8CB00E618EC /* Components */,
 				BA45B78F1CFE80BB0034C2C7 /* Util */,
@@ -240,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6660AD1CF6D1F300EF60AD /* LaunchScreen.storyboard in Resources */,
+				BA14D8121D07062900C8FB28 /* Configuration.plist in Resources */,
 				BA6660AA1CF6D1F300EF60AD /* Assets.xcassets in Resources */,
 				BA6660A81CF6D1F300EF60AD /* Main.storyboard in Resources */,
 			);
@@ -302,11 +323,14 @@
 			files = (
 				BA5B99091CF82E670005DDC5 /* LeftDrawerViewController.swift in Sources */,
 				BA45B7891CFE78470034C2C7 /* HomePageService.swift in Sources */,
+				BAEFEFC41D06767300AD4EE9 /* Color.swift in Sources */,
 				BA04BC931CFF1FCC00E618EC /* HomePageMenuLayout.swift in Sources */,
-				BA45B78E1CFE80420034C2C7 /* Configuration.swift in Sources */,
 				BA45B7911CFE81020034C2C7 /* ImageUtil.swift in Sources */,
+				BA14D8181D0718C400C8FB28 /* Configuration.swift in Sources */,
 				BA45B78B1CFE78630034C2C7 /* BaseService.swift in Sources */,
+				BA14D80F1D07021100C8FB28 /* WebAPI.swift in Sources */,
 				BA04BC8C1CFEC95A00E618EC /* HomePageMenuViewCell.swift in Sources */,
+				BA14D8141D07090C00C8FB28 /* PropertyHelper.swift in Sources */,
 				BA45B7861CFE77570034C2C7 /* AppFuncInfo.swift in Sources */,
 				BA6660A51CF6D1F300EF60AD /* HomePageViewController.swift in Sources */,
 				BA6660A31CF6D1F300EF60AD /* AppDelegate.swift in Sources */,

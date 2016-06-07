@@ -9,7 +9,22 @@
 import Foundation
 
 class Configuration {
-    static var SERVER = "http://192.168.0.100"
+    static let instance = Configuration()
     
-    static var IMAGE_SERVER = "http://139.196.186.85:8888/"
+    private var dictionary: NSDictionary?
+    
+    private init() {
+        dictionary = PropertyHelper.initPlist("Configuration.plist")
+    }
+    
+    func getStringValue(key: String) -> String {
+        return dictionary?.valueForKey(key) as! String
+    }
+    
+    func getIntValue(key: String) -> Int {
+        if let str = dictionary?.valueForKey(key) {
+            return Int(str as! NSNumber)
+        }
+        return 0
+    }
 }

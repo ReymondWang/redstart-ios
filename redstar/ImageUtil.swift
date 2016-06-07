@@ -16,9 +16,10 @@ extension UIImageView{
     
     public func rs_setImageByUrl(url: String, placeHolder: String){
         let placeHolder = UIImage(named: placeHolder)
-        let fetchUrl = Configuration.IMAGE_SERVER + url
+        let fetchUrl = Configuration.instance.getStringValue("ImageServer") + url
         if let imgUrl = NSURL(string: fetchUrl) {
             self.af_setImageWithURL(imgUrl, placeholderImage: placeHolder)
         }
+        
     }
 }

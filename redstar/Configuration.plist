@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New item</key>
+	<string></string>
+	<key>Image</key>
+	<dict>
+		<key>ImageSize</key>
+		<integer>1024</integer>
+		<key>ThumbSize</key>
+		<integer>300</integer>
+	</dict>
+	<key>Http</key>
+	<dict>
+		<key>ReadTimeOut</key>
+		<integer>10000</integer>
+		<key>ConnectTimeOut</key>
+		<real>10000</real>
+	</dict>
+	<key>NetProxy</key>
+	<dict>
+		<key>192.168.255.143</key>
+		<string>49.239.2.21</string>
+	</dict>
+	<key>Fastdfs</key>
+	<dict>
+		<key>TrackerServer</key>
+		<string>49.239.2.21:22122</string>
+		<key>SecretKey</key>
+		<string>FastDFS1234567890</string>
+		<key>AntiStealToken</key>
+		<false/>
+		<key>TrackerHttpPort</key>
+		<integer>8888</integer>
+		<key>Charset</key>
+		<string>ISO8859-1</string>
+		<key>NetworkTimeOut</key>
+		<integer>30</integer>
+		<key>ConnectTimeOut</key>
+		<integer>2</integer>
+	</dict>
+	<key>Server</key>
+	<string>http://192.168.0.100/</string>
+	<key>ImageServer</key>
+	<string>http://139.196.186.85:8888/</string>
+</dict>
+</plist>
